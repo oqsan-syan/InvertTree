@@ -29,7 +29,6 @@ function invertTree(node) {
 
     if(node.left.hasOwnProperty('left')) {
         invertTree(node.left)
-    } else if(node.right.hasOwnProperty('right')) {
         invertTree(node.right)
     }
 
